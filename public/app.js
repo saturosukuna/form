@@ -5,7 +5,7 @@ document.getElementById('dataForm').addEventListener('submit', function(event) {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     
-    fetch('http://localhost:3000/submit', {
+    fetch('http://192.168.222.225:3000/submit', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

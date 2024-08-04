@@ -26,7 +26,7 @@ const DataSchema = new mongoose.Schema({
 const Data = mongoose.model('Data', DataSchema);
 
 // Route to handle form submission
-app.post('/submit', async (req, res) => {
+app.post('http://192.168.222.225:3000/submit', async (req, res) => {
     const { name, email } = req.body;
 
     try {
@@ -39,5 +39,5 @@ app.post('/submit', async (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server running at http://192.168.222.225:${port}`);
 });
